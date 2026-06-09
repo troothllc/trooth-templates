@@ -67,7 +67,7 @@ Every consequential decision made by an AI system in our products has a human-ov
 
 Serious incidents involving our AI systems are reported to:
 
-- The Trooth incident-response team within one (1) hour of detection
+- Your incident-response team within {N} hours of detection
 - Affected customers within 72 hours of confirmation
 - Regulators within the timelines required by applicable law (15 days under EU AI Act Art. 73 for high-risk systems)
 
