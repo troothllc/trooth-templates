@@ -1,0 +1,13 @@
+# RFC 9116 security.txt template
+# Serve this file at /.well-known/security.txt on your website.
+# Update every field and remove these comment lines before publishing.
+# Validate at https://securitytxt.org
+
+Contact: mailto:security@{YOUR_DOMAIN}
+Contact: https://{YOUR_DOMAIN}/security
+Expires: {YYYY-MM-DD}T00:00:00.000Z
+Policy: https://{YOUR_DOMAIN}/vulnerability-disclosure-policy
+Acknowledgments: https://{YOUR_DOMAIN}/security/hall-of-fame
+Preferred-Languages: en
+Canonical: https://{YOUR_DOMAIN}/.well-known/security.txt
+Encryption: https://{YOUR_DOMAIN}/.well-known/pgp-key.txt

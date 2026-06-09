@@ -1,0 +1,64 @@
+{
+  "$schema": "http://cyclonedx.org/schema/bom-1.5.schema.json",
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "serialNumber": "urn:uuid:REPLACE-WITH-A-NEW-UUID",
+  "version": 1,
+  "metadata": {
+    "timestamp": "{YYYY-MM-DD}T00:00:00Z",
+    "tools": [
+      {
+        "vendor": "{YOUR_COMPANY_NAME}",
+        "name": "{YOUR_SBOM_GENERATOR}",
+        "version": "1.0.0"
+      }
+    ],
+    "component": {
+      "type": "application",
+      "bom-ref": "{YOUR_PRODUCT_NAME}@1.0.0",
+      "name": "{YOUR_PRODUCT_NAME}",
+      "version": "1.0.0",
+      "description": "{ONE_LINE_PRODUCT_DESCRIPTION}",
+      "licenses": [
+        {
+          "license": {
+            "id": "{YOUR_LICENSE_SPDX_ID}"
+          }
+        }
+      ],
+      "supplier": {
+        "name": "{YOUR_COMPANY_NAME}",
+        "url": [
+          "https://{YOUR_DOMAIN}"
+        ]
+      }
+    }
+  },
+  "components": [
+    {
+      "type": "library",
+      "bom-ref": "pkg:example/library@1.0.0",
+      "name": "example-library",
+      "version": "1.0.0",
+      "purl": "pkg:npm/example-library@1.0.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "supplier": {
+        "name": "Example Vendor"
+      }
+    }
+  ],
+  "compositions": [
+    {
+      "aggregate": "complete",
+      "assemblies": [
+        "{YOUR_PRODUCT_NAME}@1.0.0"
+      ]
+    }
+  ]
+}
